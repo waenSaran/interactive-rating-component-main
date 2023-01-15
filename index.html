@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <style href="../../"></style>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <!-- Rating state -->
+
+  <main class="rating-state">
+    <div class="circle star">
+      <img src="./images/icon-star.svg" alt="Star icon">
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!</p>
+    <div style="text-align:center;
+                display:inline-flex;
+                justify-content:space-between;"
+    >
+      <span class="circle rating" onclick="selectedRating(this)">1</span>
+      <span class="circle rating" onclick="selectedRating(this)">2</span>
+      <span class="circle rating" onclick="selectedRating(this)">3</span>
+      <span class="circle rating" onclick="selectedRating(this)">4</span>
+      <span class="circle rating" onclick="selectedRating(this)">5</span>
+    </div>
+    <button onclick="submitRating()">submit</button>
+
+  </main>
+
+  <!-- Thank you state -->
+
+  <main class="thankyou-state hide">
+    <img src="./images/illustration-thank-you.svg" 
+          alt="Thank you image" 
+          width="150"
+    >
+    <p class="rating-result">You selected <span id="selected-rating"></span> out of 5</p>
+    <h1>Thank you!</h1>
+    <p style="text-align:center">
+      We appreciate you taking the time to give a rating.
+    If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+
+    
+  </main>
+
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/waenSaran" target="_blank">Saran</a>.
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>

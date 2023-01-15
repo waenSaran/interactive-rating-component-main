@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    /* 415px = 26rem */
+    height: 26rem;
+    width: 26rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: var(--dark-blue);
+    background: radial-gradient(
+        circle at center top, 
+        var(--dark-blue) -10%,
+        var(--very-dark-blue) 150%
+        );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.circle{
+    background-color: var(--dark-blue);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+button{
+    text-transform: uppercase;
+    background-color: var(--orange);
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+span:hover{
+    color: white;
+    background-color: var(--orange);
+}
+
+button:hover{
+    background-color:white;
+    color: var(--orange);
+}
+
+.thankyou-state {
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.rating-result{
+    background-color: var(--dark-blue);
+    padding: 0.25em 1em;
+    color: var(--orange);
+    border-radius: 1rem;
+}
+
+.hide{
+    display: none;
+}
